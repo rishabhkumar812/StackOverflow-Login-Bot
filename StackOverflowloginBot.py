@@ -3,12 +3,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# Type your username and passwords
 usernameStr = 'username'
 passwordStr = 'pass'
 
-browser = webdriver.Chrome('D:/SOFTWARES/Chrome Driver/chromedriver.exe')
+# Write path of chromedriver.exe in your computer
+browser = webdriver.Chrome('chromedriver.exe_path')
 browser.get(('https://stackoverflow.com/'))
-
 
 loginBtn = browser.find_element_by_xpath('/html/body/header/div/ol[2]/li[2]/a[1]')
 loginBtn.click()
